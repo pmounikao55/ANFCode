@@ -1,0 +1,29 @@
+img.avatar {
+    border-radius: 50%;
+    margin-right:10px;
+}
+
+h1#usersTitle{
+    font-size: 30px !important;
+}
+
+ul#users{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+ul#users > li > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.rightGrouping {
+    display: flex;
+    flex-direction: column;  
+}
+
+ul#users li.users:hover{
+    cursor: pointer;
+    background-color: #CCCCCC;
+}

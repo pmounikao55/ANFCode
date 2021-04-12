@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <title>Todo list App</title>
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+      <link href='public/css/main.css' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+      <div class="container">
+            <h3>
+                <b>Add Item</b>
+            </h3>
+            <div class="flex-section flex-section--column section-row">
+                <div class="flex-section">
+                    <input id="message" type="text" required>
+                    <button class="submit" onclick="addTaskElement()">Add</button>
+                </div>
+                <span id="errors" for="message" hidden></span>
+            </div>
+          
+
+            <h3>
+                <b>Todo</b>
+            </h3>
+            <ul id="incomplete-tasks">
+            </ul>
+
+            <h3>
+                <b>Completed</b>
+            </h3>
+            <ul id="completed-tasks">
+            </ul>
+      </div>
+      <template id="todoItemTemplate">
+          <li class="flex-section">
+              <input type="checkbox" tabindex="0">
+              <label tabindex="0"></label>
+              <input type="text" tabindex="0">
+              <button class="edit" tabindex="0">Edit</button>
+              <button class="delete" tabindex="0">Delete</button>
+          </li>
+      </template>
+      <script src="./src/todo-list/buildFunctions.js"></script>
+      <script src="./src/todo-list/localStorage.js"></script>
+      <script src="./src/app.js"></script>
+  </body>
+</html>
